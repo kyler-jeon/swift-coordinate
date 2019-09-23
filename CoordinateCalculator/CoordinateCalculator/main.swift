@@ -8,5 +8,16 @@
 
 import Foundation
 
-print("Hello, World!")
+
+func main() {
+    let point = InputView.readInput()
+
+    OutputView.drawAxis()
+    OutputView.draw(with: point)
+    OutputView.finishingOperation()
+    
+    //print(point) for debug
+}
+
+main()
 
